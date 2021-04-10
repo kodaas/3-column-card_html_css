@@ -173,4 +173,9 @@ section .container .card button:hover {
   }
 }
 
+section .container .card button:hover #loader {
+  border-top: 2px solid var(--light-gray);
+  border-left: 2px solid var(--light-gray);
+}
+
 /* Loader style ends here */
