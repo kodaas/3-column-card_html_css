@@ -4,7 +4,6 @@
   box-sizing: border-box;
   font-size: 15px;
   font-family: "Lexend Deca", sans-serif;
-  /* font-family: "Big Shoulders Display", cursive; */
 }
 
 :root {
@@ -13,6 +12,101 @@
   --bright-orange: hsl(31, 77%, 52%);
   --dark-cyan: hsl(184, 100%, 22%);
   --very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+body {
+  background-color: var(--light-gray);
+}
+
+section {
+  width: 100%;
+  min-height: calc(100vh - 100px);
+  height: auto;
+  display: grid;
+  place-items: center;
+}
+
+section .container {
+  max-width: 900px;
+  min-width: 300px;
+  margin: 55px 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  overflow: hidden;
+}
+
+section .container .card {
+  min-width: 300px;
+  text-align: left;
+  flex: 1 1 300px;
+  padding: 25px 40px;
+}
+
+section .container .card img {
+  margin: 20px 0px 15px;
+}
+
+section .container .card h1 {
+  margin: 15px 0px 20px;
+  color: var(--light-gray);
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+}
+
+section .container .card p {
+  margin: 20px 0px 50px;
+  max-width: 250px;
+  line-height: 25px;
+  color: var(--tran-white);
+}
+
+section .container .card button {
+  margin: 50px 0px 20px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50px;
+}
+
+@media (min-width: 450px) {
+  section .container .card {
+    text-align: center;
+  }
+
+  section .container .card p {
+    margin: 20px auto 50px;
+  }
+}
+
+@media (min-width: 960px) {
+  section .container .card {
+    text-align: left;
+  }
+
+  section .container .card p {
+    margin: 20px 0px 50px;
+  }
+}
+
+section .container .card:nth-child(1) {
+  background-color: var(--bright-orange);
+}
+section .container .card:nth-child(1) button {
+  color: var(--bright-orange);
+}
+section .container .card:nth-child(2) {
+  background-color: var(--dark-cyan);
+}
+section .container .card:nth-child(2) button {
+  color: var(--dark-cyan);
+}
+section .container .card:nth-child(3) {
+  background-color: var(--very-dark-cyan);
+}
+section .container .card:nth-child(3) button {
+  color: var(--very-dark-cyan);
 }
 
 .attribution {
