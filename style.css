@@ -65,9 +65,12 @@ section .container .card p {
 
 section .container .card button {
   margin: 50px 0px 20px;
-  padding: 10px 15px;
-  border: none;
+  padding: 10px 20px;
+  border: solid 2px var(--light-gray);
   border-radius: 50px;
+  background-color: var(--light-gray);
+  cursor: pointer;
+  transition: all 0.2s linear;
 }
 
 @media (min-width: 450px) {
@@ -107,6 +110,11 @@ section .container .card:nth-child(3) {
 }
 section .container .card:nth-child(3) button {
   color: var(--very-dark-cyan);
+}
+
+section .container .card button:hover {
+  background-color: transparent;
+  color: var(--light-gray);
 }
 
 .attribution {
