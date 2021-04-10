@@ -23,7 +23,8 @@
   color: var(--dark-gray);
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(228, 49%, 38%);
+  font-size: 12px;
   text-decoration: none;
 }
 
